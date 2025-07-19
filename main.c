@@ -6,14 +6,15 @@
 void call_python_model(const char *prompt, const char *tone, const char *style)
 {
     char cmd[1024];
-    // snprintf(cmd, sizeof(cmd),
-    //        "python Python_Model/main.py '%s' '%s' '%s'", prompt, tone, style);
-
     snprintf(cmd, sizeof(cmd),
-             "Python_Model\\dist\\main.exe '%s' '%s' '%s'", prompt, tone, style);
+             "python Python_Model/main.py '%s' '%s' '%s'", prompt, tone, style);
+
+    // snprintf(cmd, sizeof(cmd),
+    //  "Python_Model\\dist\\main.exe '%s' '%s' '%s'", prompt, tone, style);
 
     FILE *fp = _popen(cmd, "r");
     if (!fp)
+
     {
         perror("popen failed");
         return;
