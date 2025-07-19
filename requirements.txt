@@ -1,5 +1,0 @@
-transformers
-torch
-sentencepiece
-tokenizers
-numpy
