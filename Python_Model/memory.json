@@ -1,0 +1,12 @@
+{
+    "user_profile": {
+        "style": "concise",
+        "tone": "technical"
+    },
+    "session_memory": [
+        {
+            "user": "How does AGI work?",
+            "model": "..."
+        }
+    ]
+}

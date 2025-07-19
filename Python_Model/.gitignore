@@ -1,0 +1,32 @@
+#Build artifacts
+/build/
+/*.exe
+/*.obj
+/*.ilk
+/*.pdb
+
+# Visual Studio user files
+*.user
+*.suo
+*.vcxproj.user
+
+# VS Code workspace settings
+.vscode/
+
+#LLM Models
+
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Misc
+*.log
+*.out
+
+/build/
+/venv/
+/dist/
+/build/main/
